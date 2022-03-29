@@ -5,8 +5,9 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-
+    public bool facingRight;
     public float speed, jumpForce;
+    public Animator animator;
 
     Movement input;
     Rigidbody2D rb;
@@ -27,15 +28,28 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 inputVector = input.Controls.MoveSubActions.ReadValue<Vector2>();
         float horizInput = inputVector.x;
-
+        animator.SetFloat("Speed", Mathf.Abs(horizInput));
         rb.AddForce(horizInput * speed * Time.deltaTime * Vector2.right);
+        properFlip();
         
     }
+
+    void properFlip()
+    {
+        float horizInput_flip = input.Controls.MoveSubActions.ReadValue<Vector2>().x;
+        if((horizInput_flip< 0 && facingRight) || (horizInput_flip > 0 && !facingRight))
+        {
+            facingRight = !facingRight;
+            transform.Rotate(new Vector3(0, 180, 0));
+        }
+    }
+
 
     void JumpPressed(InputAction.CallbackContext context)
     {
         if (context.performed && canJump)
         {
+            animator.SetBool("isJumping", true);
             rb.AddForce(jumpForce * Vector2.up);
             canJump = false;
         }
@@ -45,9 +59,12 @@ public class PlayerMovement : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Obstacle"))
         {
+            animator.SetBool("isJumping",false);
             canJump = true;
         }
     }
+
+
 }
 
 
