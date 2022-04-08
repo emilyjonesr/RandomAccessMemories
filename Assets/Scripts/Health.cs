@@ -18,7 +18,7 @@ public class Health : MonoBehaviour
     {
         if( Input.GetKeyDown( KeyCode.L ) )
         {
-            DamagePlayer(10);
+            DamagePlayer(20);
         }
     }
 
