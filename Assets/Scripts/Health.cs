@@ -9,9 +9,9 @@ public class Health : MonoBehaviour
 
     public HealthBar healthBar;
 
-    void Start()
+    void Start() 
     {
-        currentH = max;
+        currentH = max; 
     }
 
     void Update()
