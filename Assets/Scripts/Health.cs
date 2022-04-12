@@ -16,16 +16,15 @@ public class Health : MonoBehaviour
 
     void Update()
     {
-        if( Input.GetKeyDown( KeyCode.L ) )
+        if(Input.GetKeyDown(KeyCode.L) )
         {
-            DamagePlayer(20);
+            Destroy(20);
         }
     }
 
-    public void DamagePlayer( int damage )
+    public void Destroy( int damage )
     {
         currentH -= damage;
-
-        healthBar.SetHealth( currentH );
+        healthBar.SetHealth(currentH);
     }
 }
