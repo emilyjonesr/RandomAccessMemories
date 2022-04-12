@@ -77,7 +77,6 @@ public class Facts : MonoBehaviour
     void Update()
     {
         
-
         float length = Vector3.Distance(s.transform.position, player.transform.position);
         if(length <= 0.5){
            player_pos = true;
