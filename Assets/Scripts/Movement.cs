@@ -545,9 +545,9 @@ public partial class @Movement : IInputActionCollection2, IDisposable
             ""actions"": [
                 {
                     ""name"": ""MoveSubActions"",
-                    ""type"": ""Value"",
+                    ""type"": ""Button"",
                     ""id"": ""24657d31-6a36-4078-94f5-434ba28bad40"",
-                    ""expectedControlType"": ""Vector2"",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
@@ -563,17 +563,6 @@ public partial class @Movement : IInputActionCollection2, IDisposable
                 }
             ],
             ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""173f53c8-f602-42af-9c62-9ce3662aad6a"",
-                    ""path"": ""<Gamepad>/leftStick"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""MoveSubActions"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
                 {
                     ""name"": ""WASD"",
                     ""id"": ""e0e4e5f6-e9c5-49cb-9157-009a2605888e"",
@@ -628,6 +617,17 @@ public partial class @Movement : IInputActionCollection2, IDisposable
                     ""action"": ""MoveSubActions"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""173f53c8-f602-42af-9c62-9ce3662aad6a"",
+                    ""path"": ""<Gamepad>/leftStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveSubActions"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
