@@ -141,7 +141,7 @@ public class Facts : MonoBehaviour
     void OnGUI()
     {
         if(mouseClick){
-             GUI.Button(new Rect(s.transform.position.x, s.transform.position.y, 400, 200), scroll.fact);
+             GUI.Button(new Rect(300, 100, 400, 200), scroll.fact);
             
              
              
