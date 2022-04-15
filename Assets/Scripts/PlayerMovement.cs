@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        input = new Movement();
+        input = InputManager.inputActions;
         input.Controls.Enable();
         input.Controls.Jump.performed += JumpPressed;
         rb = GetComponent<Rigidbody2D>();
