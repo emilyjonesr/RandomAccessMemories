@@ -45,48 +45,48 @@ public class Facts : MonoBehaviour
             
         }
         if(s.name == "Scroll2"){
-            scroll = new Scrolls("Their time on Earth covered the Triassic, Jurassic, and Cretaceous geological periods.");
+            scroll = new Scrolls("Their time on Earth covered the Triassic, Jurassic,\n and Cretaceous geological periods.");
             scroll.name = s.name;
             scroll.inv_name = "Inv2";
             Debug.Log(scroll.name);
         }
          if(s.name == "Scroll3"){
-            scroll = new Scrolls("Approximately 66 million years ago, The Cretaceous Paleogene (K-T) extinction event wiped out three quarters of the plant and animal species on Earth!");
+            scroll = new Scrolls("Approximately 66 million years ago, The Cretaceous Paleogene (K-T)\n extinction event wiped out three quarters of the plant and animal species on Earth!");
             scroll.inv_name = "Inv3";
             scroll.name = s.name;
         }
         if(s.name == "Scroll4"){
-            scroll = new Scrolls("The K-T extinction was caused by a comet or asteroid larger than Mount Everest colliding with the Earth!");
+            scroll = new Scrolls("The K-T extinction was caused by a comet or asteroid larger\n than Mount Everest colliding with the Earth!");
             scroll.inv_name = "Inv4";
             scroll.name = s.name;
         }
         if(s.name == "Scroll5"){
-            scroll = new Scrolls("This asteroid, known as the Chicxulub impactor, left behind a crater off the coast of Mexico thought to be over 100 miles wide!");
+            scroll = new Scrolls("This asteroid, known as the Chicxulub impactor, left behind\n a crater off the coast of Mexico thought to be over 100 miles wide!");
             scroll.inv_name = "Inv5";
             scroll.name = s.name;
         }
         if(s.name == "Scroll6"){
-            scroll = new Scrolls("Although the asteroid killed most dinosaurs, one group remains alive today - birds!");
+            scroll = new Scrolls("Although the asteroid killed most dinosaurs, one group\n remains alive today - birds!");
             scroll.inv_name = "Inv6";
             scroll.name = s.name;
         }
         if(s.name == "Scroll7"){
-            scroll = new Scrolls("Birds were one of the few species to survive extinction because of their ability to survive off of small seeds and produce.");
+            scroll = new Scrolls("Birds were one of the few species to survive extinction\n because of their ability to survive off of small seeds and produce.");
             scroll.inv_name = "Inv7";
             scroll.name = s.name;
         }
         if(s.name == "Scroll8"){
-            scroll = new Scrolls("In modern day, paleontologists (scientists who study fossils) learn about dinosaurs through their fossilized remains.");
+            scroll = new Scrolls("In modern day, paleontologists (scientists who study fossils)\n learn about dinosaurs through their fossilized remains.");
             scroll.inv_name = "Inv8";
             scroll.name = s.name;
         }
         if(s.name == "Scroll9"){
-            scroll = new Scrolls("Paleontologists have classified approximately 700 unique species of dinosaurs so far.");
+            scroll = new Scrolls("Paleontologists have classified approximately 700 unique\n species of dinosaurs so far.");
             scroll.inv_name = "Inv9";
             scroll.name = s.name;
         }
         if(s.name == "Scroll10"){
-            scroll = new Scrolls("Dinosaurs roamed the entire Earth; their fossils can be found on all landmasses we now know as the 7 continents!");
+            scroll = new Scrolls("Dinosaurs roamed the entire Earth; their fossils can be\n found on all landmasses we now know as the 7 continents!");
             scroll.inv_name = "Inv10";
             scroll.name = s.name;
         }
@@ -140,7 +140,7 @@ public class Facts : MonoBehaviour
     void OnGUI()
     {
         if(mouseClick){
-             GUI.Button(new Rect(300, 100, 600, 200), scroll.fact);
+             GUI.Button(new Rect(150, 60, 520, 150), scroll.fact);
             
         }
        
