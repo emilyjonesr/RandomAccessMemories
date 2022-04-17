@@ -311,6 +311,7 @@ MonoBehaviour:
   player: {fileID: 234126909}
   time: 0
   inventory_scroll: {fileID: 1693843779}
+  mouseClick: 0
 --- !u!1 &165492565
 GameObject:
   m_ObjectHideFlags: 0
@@ -410,6 +411,7 @@ MonoBehaviour:
   player: {fileID: 234126909}
   time: 0
   inventory_scroll: {fileID: 1026548097}
+  mouseClick: 0
 --- !u!1 &189162050
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,7 +489,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 189162050}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 198.19, y: 21.22, z: 0}
+  m_LocalPosition: {x: 197, y: 21.22, z: 0}
   m_LocalScale: {x: 0.08, y: 0.08, z: 0.08}
   m_Children: []
   m_Father: {fileID: 0}
@@ -509,6 +511,7 @@ MonoBehaviour:
   player: {fileID: 234126909}
   time: 0
   inventory_scroll: {fileID: 684400319}
+  mouseClick: 0
 --- !u!1 &212830753
 GameObject:
   m_ObjectHideFlags: 0
@@ -50362,6 +50365,7 @@ MonoBehaviour:
   player: {fileID: 234126909}
   time: 0
   inventory_scroll: {fileID: 583602752}
+  mouseClick: 0
 --- !u!1 &563761001
 GameObject:
   m_ObjectHideFlags: 0
@@ -50461,6 +50465,7 @@ MonoBehaviour:
   player: {fileID: 234126909}
   time: 0
   inventory_scroll: {fileID: 1297583595}
+  mouseClick: 0
 --- !u!1 &583602752
 GameObject:
   m_ObjectHideFlags: 0
@@ -50813,6 +50818,7 @@ MonoBehaviour:
   player: {fileID: 234126909}
   time: 0
   inventory_scroll: {fileID: 988910343}
+  mouseClick: 0
 --- !u!1 &988910343
 GameObject:
   m_ObjectHideFlags: 0
@@ -51799,6 +51805,7 @@ MonoBehaviour:
   player: {fileID: 234126909}
   time: 0
   inventory_scroll: {fileID: 1486019841}
+  mouseClick: 0
 --- !u!1 &1629794080
 GameObject:
   m_ObjectHideFlags: 0
@@ -51898,6 +51905,7 @@ MonoBehaviour:
   player: {fileID: 234126909}
   time: 0
   inventory_scroll: {fileID: 26556645}
+  mouseClick: 0
 --- !u!1 &1693843779
 GameObject:
   m_ObjectHideFlags: 0
@@ -52161,6 +52169,7 @@ MonoBehaviour:
   player: {fileID: 234126909}
   time: 0
   inventory_scroll: {fileID: 1207456943}
+  mouseClick: 0
 --- !u!1 &1869044140
 GameObject:
   m_ObjectHideFlags: 0
@@ -52304,6 +52313,7 @@ MonoBehaviour:
   player: {fileID: 234126909}
   time: 0
   inventory_scroll: {fileID: 1590301727}
+  mouseClick: 0
 --- !u!1 &1957825324
 GameObject:
   m_ObjectHideFlags: 0
