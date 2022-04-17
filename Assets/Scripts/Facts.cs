@@ -28,7 +28,7 @@ public class Facts : MonoBehaviour
     Vector3 pos;
     public GameObject inventory_scroll;
     bool player_pos = false;
-    bool mouseClick = false;
+    public bool mouseClick = false;
     List<Scrolls> total = new List<Scrolls>();
 
 
@@ -102,7 +102,6 @@ public class Facts : MonoBehaviour
         
         float length = Vector3.Distance(s.transform.position, player.transform.position);
         if(length <= 0.8){
-           //player_pos = true;
            scroll.collected = true;
            total.Add(scroll);
         
@@ -129,11 +128,11 @@ public class Facts : MonoBehaviour
                     
                 }
 
-                //have to figure out when you click scroll again, gui button should dissapear
+            }
+            else{
+                mouseClick = false;
             }
         }
-
-        
 
         
     }
@@ -141,10 +140,8 @@ public class Facts : MonoBehaviour
     void OnGUI()
     {
         if(mouseClick){
-             GUI.Button(new Rect(300, 100, 400, 200), scroll.fact);
+             GUI.Button(new Rect(300, 100, 600, 200), scroll.fact);
             
-             
-             
         }
        
                 
