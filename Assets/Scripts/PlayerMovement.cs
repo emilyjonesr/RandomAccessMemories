@@ -25,6 +25,10 @@ public class PlayerMovement : MonoBehaviour
     public float fallMult = 2.5f;
     public float lowMult = 2f;
 
+    public Vector3 savePoint;
+    public Vector3 originalPosition;
+    public Manager levelManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +36,9 @@ public class PlayerMovement : MonoBehaviour
         input.Controls.Enable();
         input.Controls.Jump.performed += JumpPressed;
         rb = GetComponent<Rigidbody2D>();
+        savePoint = transform.position;
+        originalPosition = transform.position;
+        levelManager = FindObjectOfType<Manager>();
     }
 
     // Update is called once per frame
@@ -48,7 +55,6 @@ public class PlayerMovement : MonoBehaviour
        
         if(rb.velocity.y < fallingFloat)
         {
-            
             fallingBool = true;
         }
         else
@@ -106,6 +112,17 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "FallBorder")
+        {
+            levelManager.Respawn();
+        }
+        if (other.tag == "SavePoint")
+        {
+            savePoint = other.transform.position;
+        }
+    }
 
 }
 
