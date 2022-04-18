@@ -110,7 +110,7 @@ public class Facts : MonoBehaviour
             }
         }
 
-        if(Level1.scrolls.Count == 1) {
+        if(Level1.scrolls.Count == 10) {
             LevelCompletedPanel.SetActive(true);
             Level1.scrolls.Clear();
         }

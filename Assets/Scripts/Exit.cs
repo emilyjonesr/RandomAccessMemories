@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Exit : MonoBehaviour
 {
     public GameObject LevelCompletedPanel;
-
+    
     public void Exitgame()
     {
         LevelCompletedPanel.SetActive(false);
