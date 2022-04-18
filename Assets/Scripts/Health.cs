@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    public int currentH = 0;
-    public int max = 100;
+    public float currentH = 0.0f;
+    public float max = 100.0f;
 
     public HealthBar healthBar;
 
@@ -18,11 +18,11 @@ public class Health : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.L) )
         {
-            Destroy(20);
+            Destroy(20.0f);
         }
     }
 
-    public void Destroy( int damage )
+    public void Destroy( float damage )
     {
         currentH -= damage;
         healthBar.SetHealth(currentH);
