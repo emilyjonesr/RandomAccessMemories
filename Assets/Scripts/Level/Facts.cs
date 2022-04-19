@@ -112,7 +112,7 @@ public class Facts : MonoBehaviour
             }
         }
 
-        if(Level1.scrolls.Count == 3) {
+        if(Level1.scrolls.Count == 4) {
             LevelCompletedPanel.SetActive(true);
             winSound.Play();
             Level1.scrolls.Clear();
