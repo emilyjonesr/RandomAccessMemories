@@ -9,3 +9,7 @@ RAM is a 2D platformer designed to teach about periods in history through an eng
 
 ## File Structure
 This repository contains all of the assets and meta files contained in our Unity project and used to create the game.
+
+## Installastion
+Install Unity Hub and then Unity 2020.3.32f1
+To build, open RAM in Unity and then go to File->Build Settings. Leave the defaults, select the desired location, and click Build.
