@@ -15,10 +15,21 @@ Install Unity Hub and then Unity 2020.3.32f1
 To build, open RAM in Unity and then go to File->Build Settings. Leave the defaults, select the desired location, and click Build.
 
 ## Running
-To run the app on a Mac, first try to open it. If macOS tells you "The app cannot be opened because Apple can't check for malicious software," then follow these steps:
+
+### Mac
+To run the app on a Mac, first unzip RandomAccessMemories.zip. Next, try to open "RandomAccessMemories.app". If macOS tells you "The app cannot be opened because Apple can't check for malicious software," then follow these steps:
 
 1. With the file highlighted, navigate to the Apple menu at the top left of your navigation bar.
 2. From here, go to System Preferences > Security and Privacy > General
 3. You should see a message on this screen that Random Access Memories could not be opened.
 4. Select the "Open anyway" option.
 5. Open the file like normal.
+
+### Windows
+To run the app on a Windows PC, first unzip RandomAccessmemories.zip. Next, navigate into RandomAccessMemories and run "RAMS.exe". If Windows blocks the executable, follow these steps:
+
+1. Right click on the file and navigate to Properties.
+2. There will be a message that the file could be dangerous.
+3. Select "Unblock".
+4. Hit Apply and close this window.
+5. Double click on the exe to run the game.
