@@ -10,6 +10,15 @@ RAM is a 2D platformer designed to teach about periods in history through an eng
 ## File Structure
 This repository contains all of the assets and meta files contained in our Unity project and used to create the game.
 
-## Installastion
+## Installation
 Install Unity Hub and then Unity 2020.3.32f1
 To build, open RAM in Unity and then go to File->Build Settings. Leave the defaults, select the desired location, and click Build.
+
+## Running
+To run the app on a Mac, first try to open it. If macOS tells you "The app cannot be opened because Apple can't check for malicious software," then follow these steps:
+
+1. With the file highlighted, navigate to the Apple menu at the top left of your navigation bar.
+2. From here, go to System Preferences > Security and Privacy > General
+3. You should see a message on this screen that Random Access Memories could not be opened.
+4. Select the "Open anyway" option.
+5. Open the file like normal.
